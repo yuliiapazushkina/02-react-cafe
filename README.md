@@ -13,23 +13,22 @@ The main goal of this project is to practice working with React components, stat
 
 ## 🛠 Technologies Used
 
-React
-JavaScript (ES6+)
-CSS
-Vite / Create React App (depending on your setup)
-Git & GitHub
-GitHub Pages (for deployment)
+- React
+- JavaScript (ES6+)
+- CSS
+- Vite / Create React App (depending on your setup)
+- Git & GitHub
+- GitHub Pages (for deployment)
 
 ## ⚙️ Features
 
 Add feedback by selecting one of the options:
-👍 Good
-😐 Neutral
-👎 Bad
-
-Display the total number of feedback entries
-Calculate statistics automatically
-Show the percentage of positive feedback
+- 👍 Good
+- 😐 Neutral
+- 👎 Bad
+- Display the total number of feedback entries
+- Calculate statistics automatically
+- Show the percentage of positive feedback
 
 ## 📂 Project Structure
 src/
@@ -44,24 +43,15 @@ src/
 
 ## 💻 Installation & Setup
 
-Clone the repository:
-
-git clone https://github.com/yuliiapazushkina/02-react-cafe.git
-
-Go to the project folder:
-
-cd 02-react-cafe
-
-Install dependencies:
-
-npm install
-
-Run the project locally:
-
-npm run dev
-
-Open in browser:
-
+1. Clone the repository:
+## git clone https://github.com/yuliiapazushkina/02-react-cafe.git
+2. Go to the project folder:
+## cd 02-react-cafe
+3. Install dependencies:
+## npm install
+4. Run the project locally:
+## npm run dev
+5. Open in browser:
 http://localhost:5173
 
 ## 🎯 Learning Goals
@@ -82,6 +72,5 @@ This project was created to practice:
 GitHub: https://github.com/yuliiapazushkina
 LinkedIn: https://www.linkedin.com/in/yuliia-pazushkina/
 
-Conditional rendering when there is no feedback yet
 
 Clean and reusable React components
