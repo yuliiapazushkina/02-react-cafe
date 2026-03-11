@@ -1,73 +1,87 @@
-# React + TypeScript + Vite
+## ☕ React Cafe
+## 📌 Description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Cafe is a simple feedback application built with React.
+Users can leave feedback about a café experience by choosing between several options (good, neutral, bad). The application dynamically calculates and displays statistics based on the received feedback.
 
-Currently, two official plugins are available:
+The main goal of this project is to practice working with React components, state management, and conditional rendering.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+🔗 Demo: https://yuliiapazushkina.github.io/02-react-cafe/
+🔗 Repository: https://github.com/yuliiapazushkina/02-react-cafe
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🛠 Technologies Used
 
-## Expanding the ESLint configuration
+React
+JavaScript (ES6+)
+CSS
+Vite / Create React App (depending on your setup)
+Git & GitHub
+GitHub Pages (for deployment)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Add feedback by selecting one of the options:
+👍 Good
+😐 Neutral
+👎 Bad
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Display the total number of feedback entries
+Calculate statistics automatically
+Show the percentage of positive feedback
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📂 Project Structure
+src/
+ ├── components/
+ │   ├── FeedbackOptions
+ │   ├── Statistics
+ │   ├── Notification
+ │
+ ├── App.jsx
+ ├── main.jsx
+ └── styles.css
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💻 Installation & Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clone the repository:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+git clone https://github.com/yuliiapazushkina/02-react-cafe.git
+
+Go to the project folder:
+
+cd 02-react-cafe
+
+Install dependencies:
+
+npm install
+
+Run the project locally:
+
+npm run dev
+
+Open in browser:
+
+http://localhost:5173
+
+## 🎯 Learning Goals
+
+This project was created to practice:
+
+- React functional components
+- Component composition
+- State management
+- Event handling
+- Conditional rendering
+- Basic project structure
+
+## 👩‍💻 Author
+
+## Yuliia Pazushkina
+
+GitHub: https://github.com/yuliiapazushkina
+LinkedIn: https://www.linkedin.com/in/yuliia-pazushkina/
+
+Conditional rendering when there is no feedback yet
+
+Clean and reusable React components
